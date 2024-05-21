@@ -4,28 +4,67 @@
     box-sizing: border-box;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-
-.josefin-sans-<uniquifier> {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-// <uniquifier>: Use a unique and descriptive class name
-
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
-    font-family: 'Outfit', sans-serif; /* Use a segunda fonte escolhida para o corpo do texto */
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1, h2, h3 {
-    font-family: 'Josefin Sans', sans-serif; /* Use a primeira fonte escolhida para os títulos */
-    font-weight: 700; /* Defina a espessura da fonte como 600 (bold) */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section#destaque {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
