@@ -1,9 +1,11 @@
 /*
 
 Paleta de cores:
-
-https://colorhunt.co/palette/952323a73121dad4b5f2e8c6
-952323 A73121 DAD4B5 F2E8C6
+--text: #f2eeee;
+--background: #0f0807;
+--primary: #e1a39c;
+--secondary: #8d2316;
+--accent: #f7432d;
 
 */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
@@ -19,12 +21,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F2E8C6;
+    background-color: #fff;
 }
 
 
 header {
-    background-color: #952323;
+    background-color: #8d2316;
     color: white;
     padding: 20px;
     text-align: center;
@@ -57,7 +59,7 @@ nav ul li a:hover {
 }
 
 section{
-    background-color: #F2E8C6;
+    background-color: #fff;
 }
 
 section#destaque {
@@ -69,7 +71,7 @@ section#destaque {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #952323;
+    background-color: #f7432d;
     color: white;
     text-decoration: none;
 }
@@ -79,11 +81,11 @@ section#destaque {
 }
 
 footer {
-    background-color: #952323;
+    background-color: #8d2316;
     color: white;
     text-align: center;
-    padding: 20px;
-    position: fixed;
+    padding: 20px 0px;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

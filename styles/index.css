@@ -53,3 +53,55 @@
     font-size: 14px;
     color: #555;
 }
+
+#landing {
+    background-image: url('../assets/images/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 80%;
+    color: #fff; 
+}
+
+#landing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#landing p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+section#sobre {
+    padding: 50px 10%;
+    background-color: #F2E8C6;
+    text-align: center;
+    color: #952323;
+}
+
+section#localizacao {
+    padding: 50px 20px;
+    background-color: #DAD4B5;
+    text-align: center;
+    color: #952323;
+}
+
+section#localizacao #map {
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
