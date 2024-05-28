@@ -1,0 +1,65 @@
+/* styles/prato.css */
+#caminho {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#caminho p {
+    margin: 0;
+}
+
+#caminho a {
+    text-decoration: none;
+    color: #333;
+}
+
+#caminho a:hover {
+    text-decoration: underline;
+}
+
+#detalhes-prato {
+    display: flex;
+    align-items: start;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+#detalhes-prato img {
+    max-width: 40%;
+    height: 50%;
+    border-radius: 10px;
+    margin-right: 6%;
+    margin-left: 5%;
+    flex: 1;
+}
+
+.descricao {
+    flex: 2;
+    max-width: 600px;
+}
+
+.descricao h2 {
+    margin-top: 0;
+}
+
+.descricao p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #detalhes-prato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #detalhes-prato img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .descricao {
+        max-width: 100%;
+    }
+}

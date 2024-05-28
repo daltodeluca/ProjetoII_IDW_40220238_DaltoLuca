@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas - Restaurante Exemplo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Churrasbrasa</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/reservas.css">
 </head>
 <body>
     <header>
-        <h1>Reservas</h1>
+        <h1>Churrasbrasa</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
@@ -21,9 +22,47 @@
     </header>
     <section id="reservas">
         <h2>Reserve uma mesa</h2>
-        <!-- Formulário de reservas aqui -->
+        <form id="reservaForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data da Reserva:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora da Reserva:</label>
+                <input list="horas" id="hora" name="hora" required>
+                <datalist id="horas">
+                    <option value="12:00">
+                    <option value="12:30">
+                    <option value="13:00">
+                    <option value="13:30">
+                    <option value="14:30">
+                    <option value="19:00">
+                    <option value="19:30">
+                    <option value="20:00">
+                    <option value="20:30">
+                    <option value="21:00">
+                    <option value="21:30">
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="pessoas">Número de Pessoas:</label>
+                <input type="number" id="pessoas" name="pessoas" min="1" required>
+            </div>
+            <button type="submit" id="submitBtn" disabled>Reservar</button>
+        </form>
     </section>
-    <!-- Outras seções aqui -->
     <footer>
         <p>footer - Todos os direitos reservados.</p>
     </footer>
