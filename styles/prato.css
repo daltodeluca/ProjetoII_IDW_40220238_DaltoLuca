@@ -1,7 +1,6 @@
-/* styles/prato.css */
 #caminho {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #F5AD28;
 }
 
 #caminho p {
@@ -47,7 +46,6 @@
     color: #555;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     #detalhes-prato {
         flex-direction: column;

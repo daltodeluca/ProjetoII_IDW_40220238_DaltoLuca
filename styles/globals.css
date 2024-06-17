@@ -1,16 +1,24 @@
 /*
 
+não necessariamente irei seguir essa paleta de cores, ela poderá ser alterada durante o trabalho
+
 Paleta de cores:
---text: #f2eeee;
---background: #0f0807;
---primary: #e1a39c;
---secondary: #8d2316;
---accent: #f7432d;
+Hex: #EB8921 laranja base
+RGB: 235, 137, 33
+
+Hex: #F5AD28 laranja realce
+RGB: 245, 173, 40
+
+Hex: #2E2F2F preto médio
+RGB: 46, 47, 47
+
+Hex: #1E1E1E preto escuro
+RGB: 30, 30, 30
 
 */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
-{   
+    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,19 +29,45 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #1E1E1E;
 }
 
-
 header {
-    background-color: #8d2316;
-    color: white;
+    background-image: url('../assets/images/texture.jpg');
+    background-color: var(--secondary);
+    background-size: cover;
+    background-position: center;
+    color: #1E1E1E;
     padding: 20px;
     text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EB8921;
+    mix-blend-mode: lighten;
+    z-index: -1;
 }
 
 header h1 {
     margin: 0;
+}
+
+#logo {
+    width: 500px;
+}
+
+nav {
+    background: transparent;
 }
 
 nav ul {
@@ -47,19 +81,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #1E1E1E;
     text-decoration: none;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    background-color: #A73121;
+    background-color: #F5AD28;
     padding: 10px 20px;
     border-radius: 30px;
 }
 
-section{
-    background-color: #fff;
+section {
+    background-color: #eee;
 }
 
 section#destaque {
@@ -71,18 +105,18 @@ section#destaque {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #f7432d;
+    background-color: #EB8921;
     color: white;
     text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #A73121;
+    background-color: #F5AD28;
 }
 
 footer {
-    background-color: #8d2316;
-    color: white;
+    background-color: #EB8921;
+    color: #1E1E1E;
     text-align: center;
     padding: 20px 0px;
     position: relative;
@@ -90,7 +124,7 @@ footer {
     width: 100%;
 }
 
-.menu{
+.menu {
     margin: 10%;
 }
 
@@ -98,7 +132,7 @@ footer {
     nav ul {
         flex-direction: column;
     }
-    
+
     .carousel img {
         height: 150px;
     }

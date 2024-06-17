@@ -1,80 +1,74 @@
-#menu {
+section#menu {
     padding: 50px 20px;
     text-align: center;
+    background-color: #2e2e2e;
+    color: #333;
 }
 
-#menu h2 {
+section#menu h2 {
     margin-bottom: 40px;
 }
 
-.menu-link {
-    text-decoration: none;
-    color: inherit;
+.menu-category {
+    margin-bottom: 40px;
 }
 
-.menu-link .prato {
-    display: inline-block;
+.menu-category h3 {
+    color: #EB8921;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pratos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prato {
     width: calc(100% - 40px);
     max-width: 200px;
     margin: 20px;
     text-align: center;
     box-sizing: border-box;
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.menu-link .prato img {
-    width: 100%;
-    height: auto;
+    background-color: #1e1e1e;
     border-radius: 10px;
-}
-
-.menu-link .prato h3 {
-    margin: 10px 0;
-}
-
-.menu-link .prato p {
-    font-size: 14px;
-    color: #555;
-}
-
-.menu-link:hover .prato {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.prato {
-    display: inline-block;
-    width: calc(100% - 40px);
-    max-width: 200px;
-    margin: 20px;
-    text-align: center;
-    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
 .prato img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .prato h3 {
     margin: 10px 0;
+    font-size: 20px;
+    color: #fff;
 }
 
 .prato p {
     font-size: 14px;
-    color: #555;
+    color: #fff;
 }
 
-/* Responsividade */
+.prato:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
-    .menu-link .prato {
+    .prato {
         width: calc(50% - 40px);
     }
 }
 
 @media (max-width: 480px) {
-    .menu-link .prato {
+    .prato {
         width: calc(100% - 40px);
     }
 }

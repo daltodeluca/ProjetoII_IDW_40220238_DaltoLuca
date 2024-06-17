@@ -1,0 +1,55 @@
+section#eventos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+section#eventos h2 {
+    margin-bottom: 40px;
+    color: #EB8921;
+}
+
+.calendario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.evento {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.evento:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.evento h3 {
+    margin-top: 0;
+    color: #EB8921;
+}
+
+.evento p {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .evento {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .evento {
+        width: calc(100% - 40px);
+    }
+}

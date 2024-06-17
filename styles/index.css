@@ -70,7 +70,7 @@
     padding: 50px;
     border-radius: 10px;
     max-width: 80%;
-    color: #fff; 
+    color: #fff;
 }
 
 #landing h2 {
@@ -83,18 +83,19 @@
     font-size: 1.2em;
     margin-bottom: 30px;
 }
+
 section#sobre {
     padding: 50px 10%;
-    background-color: #F2E8C6;
+    background-color: #1E1E1E;
     text-align: center;
-    color: #952323;
+    color: #fff;
 }
 
 section#localizacao {
     padding: 50px 20px;
-    background-color: #DAD4B5;
+    background-color: #2E2E2E;
     text-align: center;
-    color: #952323;
+    color: #fff;
 }
 
 section#localizacao #map {

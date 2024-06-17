@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,22 @@
     <link rel="stylesheet" href="styles/globals.css">
     <link rel="stylesheet" href="styles/reservas.css">
 </head>
+
 <body>
     <header>
-        <h1>Churrasbrasa</h1>
+        <img src="assets/images/logo1.png" id="logo" alt="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="menu/menu.html">Menu</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="eventos.html">Eventos Especiais</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
                 <li><a href="contactos.html">Contactos</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="reservas">
         <h2>Reserve uma mesa</h2>
         <form id="reservaForm">
@@ -39,6 +43,10 @@
                 <label for="data">Data da Reserva:</label>
                 <input type="date" id="data" name="data" required>
             </div>
+
+            <!-- As horas não estão limitadas as opções abaixo. É algo que eu gostaria de implementar
+            mas não sei se é possível fazer sem o uso de JS como fiz com o botão.-->
+
             <div class="form-group">
                 <label for="hora">Hora da Reserva:</label>
                 <input list="horas" id="hora" name="hora" required>
@@ -63,8 +71,10 @@
             <button type="submit" id="submitBtn" disabled>Reservar</button>
         </form>
     </section>
+
     <footer>
-        <p>footer - Todos os direitos reservados.</p>
+        <p>Churrasbrasa - Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

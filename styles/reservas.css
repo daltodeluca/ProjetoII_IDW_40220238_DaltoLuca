@@ -1,39 +1,10 @@
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #952323;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 #reservas {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #EB8921;
 }
 
 #reservas h2 {
@@ -63,7 +34,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #aaa; /* Cor inicial do botão */
+    background-color: #aaa;
     color: white;
     border: none;
     border-radius: 4px;
@@ -72,16 +43,6 @@ button {
 }
 
 form:valid button {
-    background-color: #4CAF50; /* Cor quando habilitado */
+    background-color: #F5AD28;
     cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #952323;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Churrasbrasa</title>
+    <title>Churrasbrasa - Contactos</title>
     <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/contactos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Churrasbrasa</h1>
+        <img src="assets/images/logo1.png" id="logo" alt="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
@@ -16,16 +22,65 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="eventos.html">Eventos Especiais</a></li>
                 <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
             </ul>
         </nav>
     </header>
-    <section id="contactos">
-        <h2>Contacto</h2>
-        <!-- Informações de contacto aqui -->
+
+    <section id="contact-info-wrapper">
+        <section id="contact-info">
+            <h3>Churrasbrasa Porto</h3>
+            <p>Endereço: Rua dos Churrascos, 169, Porto, Portugal</p>
+            <p>Telefone: +351 123 456 789</p>
+            <p>Email: <a href="mailto:churrasbrasa@churrasbrasa.com">churrasbrasa@churrasbrasa.com</a></p>
+        </section>
+        <section id="contact-info">
+            <h3>Churrasbrasa Leça da Palmeira</h3>
+            <p>Endereço: Avenida dos Churrascos, 79, Porto, Portugal</p>
+            <p>Telefone: +351 666 666 666</p>
+            <p>Email: <a href="mailto:cb.lecapalmeira@churrasbrasa.com">cb.lecapalmeira@churrasbrasa.com</a></p>
+        </section>
+        <section id="contact-info">
+            <h3>Churrasbrasa Ermesinde</h3>
+            <p>Endereço: Travessa dos Churrascos, 22, Porto, Portugal</p>
+            <p>Telefone: +351 987 654 321</p>
+            <p>Email: <a href="mailto:cb.ermesinde@churrasbrasa.com">cb.ermesinde@churrasbrasa.com</a></p>
+        </section>
     </section>
-    <!-- Outras seções aqui -->
+
+    <section id="contact-form">
+        <div class="form-container">
+            <form action="###" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="###">Enviar</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <h3>Onde nos encontrar:</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45655.09889609025!2d-8.673534102079774!3d41.23261330325205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smap%20embed!5e0!3m2!1spt-PT!2spt!4v1716897167353!5m2!1spt-PT!2spt"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
     <footer>
-        <p>footer - Todos os direitos reservados.</p>
+        <p>Churrasbrasa - Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

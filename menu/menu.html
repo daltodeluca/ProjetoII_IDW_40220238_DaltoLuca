@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Churrasbrasa</title>
+    <title>Churrasbrasa - Menu</title>
     <link rel="stylesheet" href="../styles/globals.css">
     <link rel="stylesheet" href="../styles/menu.css">
 </head>
+
 <body>
     <header>
-        <h1>Churrasbrasa</h1>
+        <img src="../assets/images/logo1.png" id="logo" alt="logo">
         <nav>
             <ul>
                 <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="../sobre.html">Sobre</a></li>
                 <li><a href="../eventos.html">Eventos Especiais</a></li>
                 <li><a href="../reservas.html">Reservas</a></li>
@@ -20,48 +23,112 @@
             </ul>
         </nav>
     </header>
+
     <section id="menu">
-        <h2>Nosso Menu</h2>
-        <a href="picanha.html" class="menu-link">
-            <div class="prato">
-                <img src="../assets/images/picanha.png" alt="Picanha">
-                <h3>Picanha</h3>
-                <p>Arroz, Feijão, Batata-Frita, Banana e 3 fatias de Picanha.</p>
+
+        <div class="menu-category">
+            <h3>Entradas</h3>
+            <div class="pratos-container">
+                <div class="prato">
+                    <img src="../assets/images/entrada1.jpg" alt="Entrada 1">
+                    <h3>Batata Frita</h3>
+                    <p>com molho Rosé e Barbecue</p>
+                </div>
+                <div class="prato">
+                    <img src="../assets/images/entrada2.jpg" alt="Entrada 2">
+                    <h3>Pastel de Carne/Queijo</h3>
+                    <p>com molho Rosé</p>
+                </div>
+                <div class="prato">
+                    <img src="../assets/images/entrada3.jpg" alt="Entrada 3">
+                    <h3>Salgadinhos de Queijo</h3>
+                    <p>com molho Ketchup</p>
+                </div>
+                <div class="prato">
+                    <img src="../assets/images/entrada4.jpg" alt="Entrada 4">
+                    <h3>Pão Australiano</h3>
+                    <p>com manteiga.</p>
+                </div>
+                <div class="prato">
+                    <img src="../assets/images/entrada5.jpg" alt="Entrada 5">
+                    <h3>Rissóis de Camarão</h3>
+                    <p>com molho Rosé</p>
+                </div>
             </div>
-        </a>
-        <a href="maminha.html" class="menu-link">
-            <div class="prato">
-                <img src="../assets/images/maminha.png" alt="Maminha">
-                <h3>Maminha</h3>
-                <p>Arroz, Feijão, Batata-Frita, Banana e 3 fatias de Maminha.</p>
+        </div>
+
+        <div class="menu-category">
+            <h3>Pratos Principais</h3>
+            <div class="pratos-container">
+                <a href="picanha.html" class="menu-link">
+                    <div class="prato">
+                        <img src="../assets/images/picanha.svg" alt="Picanha">
+                        <h3>Picanha</h3>
+                    </div>
+                </a>
+                <a href="maminha.html" class="menu-link">
+                    <div class="prato">
+                        <img src="../assets/images/maminha.svg" alt="Maminha">
+                        <h3>Maminha</h3>
+                    </div>
+                </a>
+                <a href="misto.html" class="menu-link">
+                    <div class="prato">
+                        <img src="../assets/images/misto.svg" alt="Churrasco Misto">
+                        <h3>Churrasco Misto</h3>
+                    </div>
+                </a>
+                <a href="peitodefrango.html" class="menu-link">
+                    <div class="prato">
+                        <img src="../assets/images/peitodefrango.svg" alt="Peito de Frango">
+                        <h3>Peito de Frango</h3>
+                    </div>
+                </a>
+                <a href="coxadefrango.html" class="menu-link">
+                    <div class="prato">
+                        <img src="../assets/images/coxadefrango.svg" alt="Coxa de Frango">
+                        <h3>Coxa de Frango</h3>
+                    </div>
+                </a>
             </div>
-        </a>
-        <a href="misto.html" class="menu-link">
-            <div class="prato">
-                <img src="../assets/images/misto.png" alt="Churrasco Misto">
-                <h3>Churrasco Misto</h3>
-                <p>Arroz, Feijão, Batata-Frita, Banana e 1 fatia de Picanha, 1 pedaço de Coxa de Frango, 1 fatia de peito de frango e 1 salsicha toscana.</p>
+        </div>
+
+        <div class="menu-category">
+            <h3>Bebidas</h3>
+            <div class="pratos-container">
+                <div class="prato">
+                    <img src="../assets/images/bebida1.jpg" alt="Bebida 1">
+                    <h3>Refrigerante</h3>
+                    <p>Cola, Pepsi, Fanta, 7up. opções Zero com Limão</p>
+                </div>
+                <div class="prato">
+                    <img src="../assets/images/bebida2.jpg" alt="Bebida 2">
+                    <h3>Lagoa Azul</h3>
+                    <p>Curaçau Blue, Vodka e soda à escolha</p>
+                </div>
             </div>
-        </a>
-        <a href="peitodefrango.html" class="menu-link">
-            <div class="prato">
-                <img src="../assets/images/peitodefrango.png" alt="Peito de Frango">
-                <h3>Peito de Frango</h3>
-                <p>Arroz, Feijão, Salada e 3 fatias de peito de frango</p>
+        </div>
+
+        <div class="menu-category">
+            <h3>Batidos</h3>
+            <div class="pratos-container">
+                <div class="prato">
+                    <img src="../assets/images/batido1.jpg" alt="Sobremesa 1">
+                    <h3>Banana e Coco</h3>
+                </div>
+                <div class="prato">
+                    <img src="../assets/images/batido2.jpg" alt="Sobremesa 2">
+                    <h3>Morango</h3>
+                </div>
             </div>
-        </a>
-        <a href="coxadefrango.html" class="menu-link">
-            <div class="prato">
-                <img src="../assets/images/coxadefrango.png" alt="Coxa de Frango">
-                <h3>Coxa de Frango</h3>
-                <p>Arroz, Feijão, Salada e 3 pedaços de coxa de frango</p>
-            </div>
-        </a>
+        </div>
+
     </section>
-    
-    <!-- Outras seções aqui -->
+
     <footer>
-        <p>footer - Todos os direitos reservados.</p>
+        <p>Churrasbrasa - Todos os direitos reservados.</p>
     </footer>
+
 </body>
+
 </html>
